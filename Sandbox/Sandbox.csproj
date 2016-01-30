@@ -48,6 +48,9 @@
   <ItemGroup>
     <Compile Include="DataProvider.cs" />
     <Compile Include="DateTimeTests.cs" />
+    <Compile Include="KeyedCollectionExample\Player.cs" />
+    <Compile Include="KeyedCollectionExample\Roster.cs" />
+    <Compile Include="KeyedCollectionExample\Team.cs" />
     <Compile Include="License.cs" />
     <Compile Include="SerializationExamples\Car.cs" />
     <Compile Include="SerializationExamples\JamesBondCar.cs" />

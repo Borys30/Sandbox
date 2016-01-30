@@ -1,4 +1,5 @@
 ﻿using System;
+using Sandbox.KeyedCollectionExample;
 
 namespace Sandbox
 {
@@ -27,6 +28,14 @@ namespace Sandbox
             //} 
 
             //Console.WriteLine("=> Saved car in XML format!\n"); 
+
+            var team = new Team(); 
+            team.Roster.Add(new Player("Bryant", 8)); 
+            team.Roster.Add(new Player("James", 23)); 
+            Console.WriteLine(team.Roster[0].Number);
+            Console.WriteLine(team.Roster["James"].Number);
+            team.Roster["Bryant"].Name = "Russel"; 
+            Console.WriteLine(team.Roster["Russel"].Number); 
 
             Console.ReadKey(); 
         } 
